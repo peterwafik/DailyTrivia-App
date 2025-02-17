@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- ShapeableImageView with custom circle style -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p1"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <!-- Circular Image -->
+<!--    <ImageView-->
+<!--        android:id="@+id/profileImage"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:src="@drawable/p1"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="@drawable/circle_shape"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        />-->
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <!-- Streak -->
+    <TextView
+        android:id="@+id/profileStreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Streak: 10 🔥"
+        android:textSize="18sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Info Section -->
+    <TextView
+        android:id="@+id/infoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Age -->
+    <TextView
+        android:id="@+id/profileAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: 25"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Gender -->
+    <TextView
+        android:id="@+id/profileGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: Female"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: example@gmail.com"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
+</ScrollView>

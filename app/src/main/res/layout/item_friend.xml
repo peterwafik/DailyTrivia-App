@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:gravity="center">
+
+    <!-- ShapeableImageView with custom circle style -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivFriendImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nour"
+    app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <!-- Friend Name TextView below the image -->
+    <TextView
+        android:id="@+id/tvFriendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Friend Name"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

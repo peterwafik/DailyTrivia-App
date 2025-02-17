@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <!-- Feedback Text (Correct/Wrong) -->
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Correct Answer Display -->
+    <TextView
+        android:id="@+id/correctanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Correct Answer: Option X"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Fun Fact Text -->
+    <TextView
+        android:id="@+id/FunFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Did you know?"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic"/>
+
+    <!-- Next Question Button -->
+    <Button
+        android:id="@+id/btnnextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

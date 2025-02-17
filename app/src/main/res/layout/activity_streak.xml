@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Flame Icon and Day Streak Count -->
+    <ImageView
+        android:id="@+id/flameIcon"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fire"
+        android:contentDescription="Streak Flame Icon"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/tvStreakCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FFA500"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvDayStreakLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="day streak!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFA500"
+        android:layout_marginTop="8dp" />
+
+    <!-- Weekly Progress -->
+    <LinearLayout
+        android:id="@+id/weeklyProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+
+        <!-- Days of the Week (These will be updated dynamically in Kotlin) -->
+
+        <TextView
+            android:id="@+id/tvFriday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_background"
+            android:gravity="center"
+            android:text="Fri"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tvSaturday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_background"
+            android:gravity="center"
+            android:text="Sat"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tvSunday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_background"
+            android:gravity="center"
+            android:text="Sun"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
+
+        <!-- Repeat for the other days, for demonstration purposes here are two more examples -->
+        <TextView
+            android:id="@+id/tvMonday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_background"
+            android:gravity="center"
+            android:text="Mon"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tvTuesday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_upcoming_background"
+            android:gravity="center"
+            android:text="Tue"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tvWednesday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_upcoming_background"
+            android:gravity="center"
+            android:text="Wed"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tvThursday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_upcoming_background"
+            android:gravity="center"
+            android:text="Thu"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
+
+        <!-- Add more TextViews for Wednesday to Saturday -->
+
+    </LinearLayout>
+
+    <!-- Encouragement Text -->
+    <TextView
+        android:id="@+id/tvEncouragement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You're halfway to your perfect week!"
+        android:textSize="16sp"
+        android:textColor="#FFA500"
+        android:layout_marginTop="16dp" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:textAllCaps="true"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

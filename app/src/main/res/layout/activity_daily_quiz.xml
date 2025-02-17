@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EEEEEE">
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Question 1"
+        android:textSize="20sp"
+        android:textColor="#FF666666"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Multiple Choice Options -->
+    <RadioGroup
+        android:id="@+id/rgoptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgoptions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:backgroundTint="@color/purple_500"
+        android:elevation="8dp"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        style="@style/Widget.MaterialComponents.Button" />
+
+</RelativeLayout>

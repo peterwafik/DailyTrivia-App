@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "439706486879",
+    "project_id": "triviaapp-735da",
+    "storage_bucket": "triviaapp-735da.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439706486879:android:f0f1e3fd5545f7ae0fb3ea",
+        "android_client_info": {
+          "package_name": "com.example.dailytrivia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9JjyKWB0wnPHEm_GgMx2He9lnsUet0OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

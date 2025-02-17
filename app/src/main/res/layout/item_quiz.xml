@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:padding="7dp"
+    android:layout_margin="0dp"
+    android:clipToOutline="true">
+
+    <!-- Background Image with rounded corners -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivBackgroundImage"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nour"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />/>
+
+
+    <!-- Title of the Quiz aligned to the top left -->
+    <TextView
+        android:id="@+id/tvQuizTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="Quiz Title"
+        android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/white"
+    android:paddingTop="8dp"
+    android:paddingStart="14dp" />
+
+</RelativeLayout>

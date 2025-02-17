@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    android:fontFamily="sans-serif"                // Regular
+    android:fontFamily="sans-serif-medium"         // Medium weight
+    android:fontFamily="sans-serif-bold"           // Bold weight
+    android:fontFamily="sans-serif-light"          // Light weight
+
+</resources>
